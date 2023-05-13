@@ -1,12 +1,11 @@
-
-
 #include <amxmodx>
 #include <fakemeta>
 
-public plugin_init() {
-	register_plugin("Anti-CSQQ", "1.0", "iQuit");
-	server_print("[ ANTI CSQQ Working. Have fun]");
-	server_print("[ Ver: 1.0 Author: iQuit]");
+public plugin_init() 
+{
+	register_plugin("Anti-CSQQ", "1.31", "SSiQuit");
+	server_print("[ ANTI CSQQ Çalışıyo. İyi Eğlenceler]");
+	server_print("[ Ver: 1.31 Author: SSiQuit]");
 	register_forward(FM_AddToFullPack, "fw_AddToFullPack_Post", true)
 }
 

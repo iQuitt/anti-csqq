@@ -12,6 +12,11 @@ public plugin_init() {
 
 public fw_AddToFullPack_Post(es_handle, pe, ent, host, flags, player, pSet)
 {
+	if(!player) return FMRES_IGNORED
+
+	if(!is_user_alive(host)) return FMRES_IGNORED
+
+	if(!pev_valid(ent)) return FMRES_IGNORED
 
 	if (player && host != ent && is_user_alive(ent) && is_user_alive(host))
 	{
